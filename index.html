@@ -33,7 +33,12 @@ for (step_subsec = 1; step_subsec < 4; step_subsec++) {
 select_str = "#text-" + step_sec + "-" + step_subsec;
 filter_table(select_str + " form", select_str + " table");
 };
-};
+				    };
+				     $('.popover-dismiss').popover({
+	trigger: 'focus',
+	container: 'body',
+	html: 'true'
+    });
 });
 </script>
 </head>
